@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(20, 17, 17);
+}
+
+#chatdiv, #senddiv, #sendinput, #sendbutton{
+    border-style: none;
+    box-sizing: border-box;
+}

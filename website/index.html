@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/chat.css">
+    <link rel="stylesheet" href="styles/input.css">
+</head>
+
+<body id="root">
+    <div id="chatdiv">
+        <!-- populated using script.js -->
+    </div>
+    <div id="senddiv">
+        <form>
+            <input type="text" placeholder="Enter your message" id="sendinput">
+            <button type="submit" onclick="sendPress()" id="sendbutton" title="sendsInput">
+                <img src="assets/send.svg" alt="sendemoji" height="90%" width="90%">
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

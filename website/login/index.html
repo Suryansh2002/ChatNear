@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/login/style.css">
+</head>
+<body>
+    <script>
+        function enterChat(){
+            let name = document.getElementById("nameinput").value;
+            if (name.length < 1 ){
+                alert("Name cannot be empty");
+                return;
+            }
+            window.location.href = `/?name=${name}`
+        }
+    </script>
+    <div id="login-box">
+            <h2 id="heading">Enter your Name</h2>
+            <input type="text" title="input" id="nameinput">
+            <button type="button" onclick="enterChat()">Enter</button>
+    </div>
+</body>
+</html>

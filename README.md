@@ -5,7 +5,9 @@ A simple express js chat website where you can send messages and people accessin
 Acesss https://myconnect.fun to test.
 
 ## Running the app locally
-> Make sure nodejs is installed on your system.
+> Make sure npm is installed on your system.
+
+> Clone/Download the GitHub Repo.
 
 Run the following commands in your terminal.
 ```

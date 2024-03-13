@@ -10,6 +10,7 @@ let ws = new WebSocket(WEBSOCKET_URL);
 
 ws.onopen = () => {
     console.log("connected");
+    navigator.geolocation.getCurrentPosition(updateLocation, onLocationError, {enableHighAccuracy: true});
 }
 
 ws.onmessage = (event) => {
@@ -53,8 +54,9 @@ function onLocation(location) {
 }
 
 function onLocationError(error) {
-    alert(`Failed to get location ${error}\nLocation is needed for sending messages !`);
     document.getElementById("sendbutton").disabled = false;
+    alert(`Failed to get location !\nLocation is needed for sending messages !`);
+    console.log(error)
 }
 
 async function sendMessage(){
@@ -74,7 +76,7 @@ async function sendMessage(){
     });
     document.getElementById("sendbutton").disabled = false;
 
-    if (req.status != 200){
+    if (req.status != 202){
         alert("Failed to send message");
     }
 }

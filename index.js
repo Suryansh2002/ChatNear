@@ -54,7 +54,7 @@ app.post("/message", (req, res) => {
             user_data[key].socket.send(payload);
         }
     }
-    res.status(200).send();
+    res.status(202).send();
 })
 
 app.use(express.static(path.join(__dirname, "/website")));

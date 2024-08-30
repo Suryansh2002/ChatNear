@@ -2,7 +2,7 @@
 A simple express js chat website where you can send messages and people accessing website near your location could see messages.
 
 ## Live Demo
-Acesss https://myconnect.fun to test.
+Acesss https://chatnear.myconnect.fun to test.
 
 ## Running the app locally
 > Make sure npm is installed on your system.

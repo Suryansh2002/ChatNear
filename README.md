@@ -16,3 +16,11 @@ npm start
 ```
 
 Open http://localhost on your broswer to access the site.
+
+## Working
+
+ -  `Navigator Geolocation Api is used to send the user's location to the backend`
+ 
+ -  `Whenever a user sends a message, Backend calculates the nearest distance of users`  
+ 
+ -  `Nearby Online users recieve message using websockets`
